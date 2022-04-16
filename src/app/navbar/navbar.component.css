@@ -1,0 +1,15 @@
+nav.navbar.navbar-expand-lg.navbar-light.navbar-bg {
+  background: #3f4fa5;
+  padding: 1% 4%;
+}
+
+a.navbar-brand {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.navbar-nav a.nav-link {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 30px;
+}

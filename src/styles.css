@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+select {
+  -webkit-appearance: listbox !important;
+  padding: 10px;
+}
+label {
+  margin-bottom: 6px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  color: #fff !important;
+}

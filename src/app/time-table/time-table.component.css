@@ -1,0 +1,50 @@
+h1.main-heading.text-center {
+  margin-bottom: 27px;
+}
+
+.inner-container {
+  max-width: 66%;
+  padding: 23px 0 50px 0;
+  background: #f3f3f3;
+  margin: 8% auto 0;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+button.btn.btn-md.text-white.view-btn {
+  background: #3e4fa5;
+  margin-top: 20px;
+  padding: 7px 25px;
+  letter-spacing: 1.5px;
+}
+
+.time-table-container {
+  max-width: 87%;
+  margin: auto;
+}
+
+.time-table-container-table {
+  background: #b9b9b9;
+  padding: 14px;
+}
+
+p.examp-head-name {
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+
+.exam-info.text-center {
+  margin-bottom: 15px;
+}
+
+p.exam-info-bottom-text {
+  margin-top: 27px;
+}
+
+.time-table-container-table {
+  background: #b9b9b9;
+  padding: 14px;
+  margin-top: 20px;
+}
