@@ -13,7 +13,33 @@ export class LoginService {
     );
   }
 
-  validaeUser(userData: any) {
+  addAdmin(userData: any) {
+    const headers = { 'content-type': 'application/json' };
+    const user = {
+      aemail: userData.userEmail,
+      apassword: userData.userPassword,
+    };
+    return this.http.post(
+      'http://localhost:8090/collegemanagement/admin/add-admin',
+      user,
+      { headers: headers }
+    );
+  }
+
+  addStudent(userData: any) {
+    const headers = { 'content-type': 'application/json' };
+    const user = {
+      aemail: userData.userEmail,
+      apassword: userData.userPassword,
+    };
+    return this.http.post(
+      'http://localhost:8090/collegemanagement/admin/add-admin',
+      user,
+      { headers: headers }
+    );
+  }
+
+  addFaculty(userData: any) {
     const headers = { 'content-type': 'application/json' };
     const user = {
       aemail: userData.userEmail,
