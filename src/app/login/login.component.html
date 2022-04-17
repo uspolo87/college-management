@@ -4,28 +4,34 @@
       <h1 class="login-head">Login</h1>
     </div>
     <div class="login-inner-container">
-      <form class="form">
+      <form
+        class="form"
+        #signUpForm="ngForm"
+        (ngSubmit)="validateuUser(signUpForm)"
+      >
         <div class="form-group">
           <label for="user-name">Email</label>
 
           <input
             type="text"
-            name="user-email"
+            name="userEmail"
             id="user-email"
             placeholder="Enter Email address"
             class="form-control"
+            ngModel
           />
         </div>
 
         <div class="form-group">
-          <label for="user-name">Password</label>
+          <label for="user-password">Password</label>
 
           <input
             type="password"
-            name="user-password"
+            name="userPassword"
             id="user-password"
             placeholder="Enter password"
             class="form-control"
+            ngModel
           />
         </div>
 

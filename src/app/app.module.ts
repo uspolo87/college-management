@@ -15,6 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ParentDetailsComponent } from './parent-details/parent-details.component';
 import { AboutComponent } from './about/about.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,7 @@ import { AboutComponent } from './about/about.component';
     ParentDetailsComponent,
     AboutComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

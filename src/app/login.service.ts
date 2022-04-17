@@ -12,4 +12,17 @@ export class LoginService {
       'http://localhost:8090/collegemanagement/packagedetails/list'
     );
   }
+
+  validaeUser(userData: any) {
+    const headers = { 'content-type': 'application/json' };
+    const user = {
+      aemail: userData.userEmail,
+      apassword: userData.userPassword,
+    };
+    return this.http.post(
+      'http://localhost:8090/collegemanagement/admin/add-admin',
+      user,
+      { headers: headers }
+    );
+  }
 }

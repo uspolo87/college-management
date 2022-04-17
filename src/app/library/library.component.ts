@@ -7,11 +7,12 @@ import { LoginService } from '../login.service';
   styleUrls: ['./library.component.css'],
 })
 export class LibraryComponent implements OnInit {
+  bookData: any;
   constructor(private books: LoginService) {}
 
   ngOnInit(): void {
     this.books.getBooks().subscribe((data) => {
-      console.log(data);
+      this.bookData = data;
     });
   }
 }
